@@ -83,6 +83,17 @@ No .NET installation required (self-contained build).
 
 ---
 
+## 🤝 Contributing
+
+Ideas and feedback are welcome!  
+If you have an idea for a new feature or notice something that could be improved:
+
+- Open an [Issue](https://github.com/Vlas-20/WinCultureInspector/issues) to suggest a feature or report a bug  
+
+Even small improvements like better documentation, new examples, or code cleanups are appreciated!
+
+---
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
