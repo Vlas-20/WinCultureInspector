@@ -67,6 +67,22 @@ Currency:    Euro (€)
 
 ---
 
+## 📦 Installation
+
+Download the latest version from the [Releases page](https://github.com/Vlas-20/WinCultureInspector/releases).
+
+### Available builds
+- [WinCultureInspector-v0.1.0-win-x86-sc.zip](https://github.com/Vlas-20/WinCultureInspector/releases/download/v0.1.0/WinCultureInspector-v0.1.0-win-x86-sc.zip)  
+  *(32-bit, required for Locale Emulator, works on all Windows systems)*
+
+- [WinCultureInspector-v0.1.0-win-x64-sc.zip](https://github.com/Vlas-20/WinCultureInspector/releases/download/v0.1.0/WinCultureInspector-v0.1.0-win-x64-sc.zip)  
+  *(64-bit, recommended for modern Windows systems)*
+
+Just download, extract, and run `WinCultureInspector.exe`.  
+No .NET installation required (self-contained build).
+
+---
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
