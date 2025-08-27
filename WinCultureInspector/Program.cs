@@ -21,9 +21,34 @@ Console.WriteLine($"Region:      {region.DisplayName} ({region.Name})");
 Console.WriteLine($"ISO:         {region.TwoLetterISORegionName}/{region.ThreeLetterISORegionName}");
 Console.WriteLine($"Currency:    {region.CurrencyNativeName} ({region.CurrencySymbol})");
 
+CheckIfUiCultureAndCultureAreConsistent();
+
 Console.WriteLine();
 Console.WriteLine("Done. Press any key to exit …");
 Console.ReadKey(true);
+
+void CheckIfUiCultureAndCultureAreConsistent()
+{
+    var consistent = ui.IetfLanguageTag == cur.IetfLanguageTag;
+
+    PrintSection("Culture Consistency Check");
+    
+    if (consistent)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("UI culture and CurrentCulture are consistent.");
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("UI culture and CurrentCulture differ!");
+        Console.ResetColor();
+        Console.WriteLine($"UI Culture:      {CultureInfo.CurrentUICulture.DisplayName} ({CultureInfo.CurrentUICulture.Name})");
+        Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.DisplayName} ({CultureInfo.CurrentCulture.Name})");
+    }
+
+    Console.ResetColor();
+}
 
 void PrintHeader(string title)
 {
